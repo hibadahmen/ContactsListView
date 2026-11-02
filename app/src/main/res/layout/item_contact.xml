@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="80dp"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:background="@drawable/bg_contact_row"
+    android:padding="14dp">
+
+    <!-- Première lettre du nom -->
+    <TextView
+        android:id="@+id/tvInitiale"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:background="@drawable/bg_contact_avatar"
+        android:gravity="center"
+        android:textColor="@color/contacts_primary"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:importantForAccessibility="no" />
+
+    <!-- Nom du contact -->
+    <TextView
+        android:id="@+id/tvNom"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginStart="14dp"
+        android:textColor="@color/contacts_text"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <!-- Indication visuelle : toute la ligne est cliquable -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="@string/contacts_row_edit"
+        android:textColor="@color/contacts_primary"
+        android:textSize="12sp" />
+
+</LinearLayout>

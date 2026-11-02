@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+
+    <string name="app_name">Contacts</string>
+
+    <string name="contacts_title">Mes contacts</string>
+    <string name="contacts_subtitle">Gardez vos proches à portée de main</string>
+
+    <string name="contacts_edit_title">Modifier le contact</string>
+    <string name="contacts_edit_description">Choisissez une personne dans la liste ci-dessous.</string>
+
+    <string name="hint_contact">Nom du contact</string>
+    <string name="btn_modifier">Enregistrer</string>
+
+    <string name="contacts_list_title">VOTRE RÉPERTOIRE</string>
+    <string name="contacts_row_edit">Modifier</string>
+
+    <string name="msg_aucune_selection">Sélectionnez d\'abord un contact</string>
+    <string name="msg_nom_vide">Le nom ne peut pas être vide</string>
+    <string name="msg_contact_modifie">✓ Contact mis à jour : %1$s</string>
+
+</resources>

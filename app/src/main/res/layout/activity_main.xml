@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/contacts_background"
+    android:padding="24dp">
+
+    <!-- Titre de l'écran -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="@string/contacts_title"
+        android:textColor="@color/contacts_text"
+        android:textSize="32sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:text="@string/contacts_subtitle"
+        android:textColor="@color/contacts_text_secondary"
+        android:textSize="14sp" />
+
+    <!-- Panneau de modification -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:orientation="vertical"
+        android:background="@drawable/bg_contact_panel"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/contacts_edit_title"
+            android:textColor="@color/contacts_text"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:text="@string/contacts_edit_description"
+            android:textColor="@color/contacts_text_secondary"
+            android:textSize="13sp" />
+
+        <EditText
+            android:id="@+id/etContact"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:minHeight="52dp"
+            android:backgroundTint="@color/contacts_primary"
+            android:hint="@string/hint_contact"
+            android:inputType="textPersonName"
+            android:imeOptions="actionDone"
+            android:maxLines="1"
+            android:textColor="@color/contacts_text"
+            android:textColorHint="@color/contacts_text_secondary"
+            android:textSize="16sp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnModifier"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:minHeight="52dp"
+            android:background="@drawable/bg_contact_panel"
+            android:backgroundTint="@color/contacts_primary"
+            android:text="@string/btn_modifier"
+            android:textAllCaps="false"
+            android:textColor="@color/contacts_white"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <!-- En-tête de la liste -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:layout_marginBottom="12dp"
+        android:letterSpacing="0.12"
+        android:text="@string/contacts_list_title"
+        android:textColor="@color/contacts_text_secondary"
+        android:textSize="12sp"
+        android:textStyle="bold" />
+
+    <!-- Liste des contacts -->
+    <ListView
+        android:id="@+id/lvContacts"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:choiceMode="singleChoice"
+        android:clipToPadding="false"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="10dp"
+        android:paddingBottom="8dp"
+        android:scrollbars="vertical" />
+
+</LinearLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="contacts_background">#F6F5FB</color>
+    <color name="contacts_primary">#7357D8</color>
+    <color name="contacts_primary_light">#EEE8FF</color>
+    <color name="contacts_text">#252238</color>
+    <color name="contacts_text_secondary">#858197</color>
+    <color name="contacts_white">#FFFFFF</color>
+    <color name="contacts_border">#E7E3F0</color>
+</resources>
